@@ -2,7 +2,7 @@
 
 DATE=`date`
 echo $DATE
-echo -e "change $DATE\n" >> resource.txt
+echo -e "develop $DATE\n" >> resource.txt
 
 git add -A
-git commit -m "change $DATE"
+git commit -m "develop $DATE"
