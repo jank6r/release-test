@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Check if running on default branch
         run: |
-          if [ "${{ github.ref }}" = "refs/heads/${{ github.repository }}" ]; then
+          if [ "${{ github.ref }}" = "refs/heads/$(git remote show origin | grep 'HEAD branch' | cut -d':' -f2 | xargs)" ]; then
             echo "Running on the default branch."
           else
             echo "Not running on the default branch."
