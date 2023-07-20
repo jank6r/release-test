@@ -1,9 +1,6 @@
 name: "Default Branch"
 
-on:
-  push:
-    branches:
-      - '*'
+on: [push]
 
 jobs:
   which-branch:
